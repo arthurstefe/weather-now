@@ -1,0 +1,27 @@
+<div class="columns">
+  <loader #loader></loader>
+  <div class="column">
+        <weather-card 
+            #nuukCard 
+            cardTitle="Nuuk, Gl" 
+            (onLoadWeather)="onLoadWeather($event, 'nuuk')"
+        >
+        </weather-card>
+  </div>
+  <div class="column">
+        <weather-card 
+            #urubiciCard 
+            cardTitle="Urubici, BR" 
+            (onLoadWeather)="onLoadWeather($event, 'urubici')"
+        >
+        </weather-card>
+  </div>
+  <div class="column">
+        <weather-card 
+            #nairobiCard 
+            cardTitle="Nairobi, KE" 
+            (onLoadWeather)="onLoadWeather($event, 'nairobi')"
+        >
+        </weather-card>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica;
+}
+  
+body {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.container {
+    background-color: #f1f1f1;
+    min-height: 800px;
+    padding: 30px;
+    padding-top: 85px;
+    padding-bottom: 0;
+}
+
+.blue {
+    color: #69a3ff;
+}
+
+.red {
+    color: #ed1946;
+}
+
+.orange {
+    color: #ff9632;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .container {
+        padding: 85px;
+        padding-top: 55px;
+        padding-bottom: 0;
+    }
+    
+}

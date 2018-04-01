@@ -1,0 +1,17 @@
+nav {
+    padding: 15px 0;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 2px #ebebeb;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    max-width: 1024px;
+}
+
+nav img {
+    width: 160px;
+}

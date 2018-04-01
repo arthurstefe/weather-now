@@ -1,0 +1,23 @@
+.columns {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.column {
+    float: left;    
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .columns {
+        flex-direction: row;
+        height: 800px;
+    }
+
+    .column {
+        width: 33.3333%;
+    }
+    
+}

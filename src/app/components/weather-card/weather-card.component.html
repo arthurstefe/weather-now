@@ -1,0 +1,26 @@
+<div class="weather-card">
+  <h3>{{cardTitle}}</h3>
+  <divider></divider>
+  <loader #loader></loader>
+  <div class="weather-card-error" *ngIf="showError">
+    <h4>Something went wrong</h4>
+    <button (click)="loadWeather(city)">Try again</button>
+  </div>
+  <div *ngIf="cityWeather && !showError">
+    <h2 [ngClass]="{
+        'blue': cityWeather.temp < 6, 
+        'orange': cityWeather.temp > 5 && cityWeather.temp < 26, 
+        'red': cityWeather.temp > 25
+      }">
+      {{cityWeather.temp || 0 | number:'1.0-0'}}&deg;</h2>
+    <div class="weather-card-footer">
+      <div class="footer-info">
+        <span>HUMIDITY<br><b>{{cityWeather.humidity}}<small>%</small></b></span>
+        <span>PRESSURE<br><b>{{cityWeather.pressure}}</b><small>hPa</small></span>
+      </div>
+      <div class="footer-updated-at">
+        <p>Updated at {{cityWeather.updated_at | date:'hh:mm:ss a'}}</p>
+      </div>
+    </div>
+  </div>
+</div>
